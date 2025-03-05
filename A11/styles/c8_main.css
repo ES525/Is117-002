@@ -1,0 +1,144 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: white;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 98%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+/* Navigation Menu */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%; /* Moved width from <a> to <li> */
+}
+#nav_menu ul li a {
+    display: block;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+    color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%; /* Ensure submenu extends full width */
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* Responsive Navigation */
+.slicknav_menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    #nav_menu {
+        display: none;
+    }
+    .slicknav_menu {
+        display: block;
+    }
+}
+@media (max-width: 769px) {
+    
+    header img {
+        display: block;
+        margin: 0 auto;
+        float: none;
+			max-width: 30%;
+    }
+    header {
+        text-align: center;
+    }
+
+    .speakers-container {
+		column-count: 2;
+		column-gap: 20px; 
+	}
+	
+    section, aside {
+        float: none;
+        width: calc(100% - 4%); 
+    }
+
+    
+    aside {
+        padding-right: 2%;
+    }
+}
+
+@media (max-width: 769px) {
+    aside h2 a {
+        font-size: 85%;
+    }
+    section h1 {
+        font-size: 125%;
+    }
+    section h2, aside h2 {
+        font-size: 110%;
+    }
+}
+
+/* Responsive Layout */
+section, aside {
+    width: 100%;
+    padding: 2%; /* Adjusted padding for responsiveness */
+}
+article img {
+    max-width: 40%;
+    min-width: 150px;
+    height: auto;
+}
+
+@media (min-width: 769px) {
+    section {
+        float: left;
+        width: 65%;
+        padding: 2%; /* Adjusted padding */
+    }
+    aside {
+        float: right;
+        width: 30%;
+        padding-left: 2%; /* Adjusted padding */
+    }
+    header img {
+        padding: 0 2%; /* Adjusted left and right padding */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #931420;
+    clear: both;
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
