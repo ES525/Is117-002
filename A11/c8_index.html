@@ -4,29 +4,23 @@
 <head>
 	<meta charset="utf-8">
 	<title>San Joaquin Valley Town Hall</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<link rel="shortcut icon" href="images/favicon.ico">
-<link rel="stylesheet" href="styles/c8_main.css">
-	<link rel="stylesheet" href="styles/slicknav.css">
+	<link rel="stylesheet" href="styles/c8_main.css">
+<link rel="stylesheet" href="styles/slicknav.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+
 
 </head>
 
 <body>
 	<header>
 		<img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
-		<style>
-			body {
-				width: 98%;
-				max-width: 960px;
-			}
-		</style>
-
 		<h2>San Joaquin Valley Town Hall</h2>
 		<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
 	</header>
-	<nav id="nav_menu" class="slicknav">
-
+	<nav id="mobile_menu"></nav>
+	<nav id="nav_menu">
     	<ul>
         	<li><a href="index.html" class="current">Home</a></li>
         	<li><a href="speakers.html">Speakers</a></li>
@@ -42,8 +36,6 @@
         	</li>
     	</ul>
 	</nav>
-	<nav id="mobile_menu"></nav>
-
 	<main>
 		<section>
 			<h2>Our Mission</h2>
@@ -91,20 +83,15 @@
 		</aside>
 	</main>
 	<footer>
-		<p>&copy; 2022, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+		<p>&copy; Eric Shi 2025</p>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.slicknav/1.0.10/jquery.slicknav.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('#nav_menu').slicknav({
-				label: '',
-				prependTo: '#mobile_menu',
-				closedSymbol: '▼',
-				openedSymbol: '▲'
-			});
-		});
-	</script>
 </body>
+<script>
+    $(document).ready(function(){
+        $("#nav_menu ul").slicknav({
+            prependTo: "#mobile_menu"
+        });
+    });
+</script>
 
 </html>
