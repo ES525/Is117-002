@@ -9,8 +9,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 98%;
-    max-width: 960px;
+    width: 800px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -41,7 +40,10 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 3.125%;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
 }
 /* the styles for the navigation menu */
 #nav_menu ul {
@@ -55,7 +57,7 @@ header img {
 }
 #nav_menu ul li a {
     display: block;
-    width: 10.42%;
+    width: 160px;
     text-align: center;
     padding: 1em 0;
     text-decoration: none;
@@ -70,7 +72,6 @@ header img {
     display: none;
     position: absolute;
     top: 100%;
-    width: 100%;
 }
 #nav_menu ul ul li {
 	float: none;
@@ -86,9 +87,9 @@ header img {
 
 /* the styles for the section */
 section {
-	width: 65.63%;
+	width: 525px;
 	float: right;
-	padding: 0 2.08% 20px 2.08%;
+	padding: 0 20px 20px 20px;
 }
 section h1 {
 	font-size: 150%;
@@ -136,9 +137,9 @@ article img {
 
 /* the styles for the aside */
 aside {
-	width: 26.56%;
+	width: 215px;
 	float: right;
-	padding: 0 0 20px 2.08%;
+	padding: 0 0 20px 20px;
 }
 aside h2 {
 	color: #800000;
@@ -218,8 +219,10 @@ footer p {
         font-size: 90%;
     }
 }
+/* Hide the desktop menu on small screens */
 @media (max-width: 767px) {
     #nav_menu {
       display: none;
     }
   }
+  
