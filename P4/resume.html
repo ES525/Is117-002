@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Eric Shi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center">My Resume</h1>
+        <p class="text-center">Here is my full resume in text form with links to my projects.</p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h3>Download Resume</h3>
+                <p>
+                    <a href="images/Resume.pdf" class="btn btn-primary" download>Download PDF</a>
+                </p>
+                <h5>EDUCATION</h5>
+                <h6>NJIT - Ying Wu College of Computing</h6>
+                <p><strong>B.S. in Information Technology | Sep 2023 - Present | Newark, NJ</strong></p>
+                <ul>
+                    <li><strong>Cumulative GPA:</strong> 3.8/4.0</li>
+                    <li><strong>Relevant Coursework:</strong></li>
+                    <ul>
+                        <li>Wireless Networks</li>
+                        <li>Cloud Administration</li>
+                        <li>Intro to Website Development</li>
+                        <li>Computer Systems and Networks</li>
+                        <li>Introduction to Computer Science I & II</li>
+                    </ul>
+                </ul>
+                <h5>EXPERIENCE</h5>
+                <h6>Lab Assistant & Organizer</h6>
+                <p><strong>NJIT | Sep 2024 – Present</strong></p>
+                <ul>
+                    <li>Assist in setting up and configuring physical routers, switches, and networking devices for lab
+                        sessions</li>
+                    <li>Maintain and organize lab equipment, ensuring proper cable management and device functionality
+                    </li>
+                    <li>Provide support to students during lab exercises, answering questions and clarifying concepts
+                    </li>
+                    <li>Maintain a structured and orderly lab environment to enhance learning experiences</li>
+                </ul>
+
+                <h5>Skills</h5>
+                <h6><strong>Networking & IT Skills:</strong></h6>
+                <ul>
+                    <li>Network Configuration (Physical & Virtual)</li>
+                    <li>HTML & CSS</li>
+                    <li>Router & Switch Setup (Cisco, Physical & Packet Tracer)</li>
+                    <li>VLANs, Subnetting, OSPF, EIGRP</li>
+                    <li>IP Addressing & DHCP Configuration</li>
+                    <li>Network Troubleshooting & Security</li>
+                </ul>
+                <h6><strong>Hardware & Infrastructure:</strong></h6>
+                <ul>
+                    <li>Cisco Packet Tracer & Physical Networking Equipment</li>
+                    <li>Hardware Setup & Cable Management</li>
+                    <li>Firewall & Port Configuration</li>
+                    <li>Lab Equipment Maintenance & Organization</li>
+                    <li>Problem-Solving & Troubleshooting</li>
+                </ul>
+
+                <h6><strong>Programming Languages:</strong></h6>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                    <li>HTML & CSS</li>
+                </ul>
+</body>
+
+</html>
+
+<h5>Projects</h5>
+<ul>
+    <li><a href="projects.html"><strong>ChatRoom</strong></a>
+        <ul>
+            <li>Developed a multi-client chatroom application with real-time communication, breakout rooms, and message
+                relay across rooms.</li>
+            <li>Implemented user commands like /roll, /flip, private messaging (@username), and text formatting (bold,
+                italics, color).</li>
+            <li>Integrated mute/unmute functionality, session export, and persistent mute lists, ensuring smooth user
+                interactions across sessions.</li>
+        </ul>
+    </li>
+    <li><a href="projects.html"><strong>Network Simulation & Configuration Using Cisco Packet Tracer</strong></a>
+        <ul>
+            <li>Configured and deployed physical routers, switches, and end devices to build functional networks.</li>
+            <li>Implemented VLANs, subnetting, OSPF, and EIGRP for optimized network performance.</li>
+            <li>Conducted troubleshooting of hardware and network issues, including cable testing, port configuration,
+                and firewall settings.</li>
+        </ul>
+    </li>
+</ul>
+
+
+</div>
+</div>
+</div>
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    <p>&copy; <span id="year"></span> Eric Shi | <a href="#" class="text-white">Terms of Service</a> | <a href="#"
+            class="text-white">Privacy Statement</a></p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
