@@ -1,4 +1,4 @@
-/* General Styles */
+ /* DEVELOPER:Eric, IS117--002, Spring 2025*/
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -20,7 +20,7 @@ p {
     text-align: justify;
 }
 
-/* Navbar Styles */
+
 .navbar-brand, .nav-link {
     color: white !important;
 }
@@ -29,7 +29,7 @@ p {
     font-weight: bold;
 }
 
-/* Card Styles */
+
 .card {
     border: none;
     box-shadow: 0 4px 8px #d11414b8;
@@ -40,7 +40,7 @@ p {
     transform: translateY(-5px);
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #343a40;
     color: white;
@@ -58,7 +58,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Form Styles */
+
 form {
     background: #e0dddd;
     padding: 20px;
